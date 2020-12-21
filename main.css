@@ -20,13 +20,15 @@ html {
     margin: 0;
     padding: 0;
     font-size: 16px;
-    font-family: var(--font-main);
 }
 
 body {
+    font-family: var(--font-main);
     margin: 0;
+    color: var(--feldgrau);
 }
-a{color: black; text-decoration: none;}
+a{color: var(--feldgrau); text-decoration: none;}
+a:focus{outline:none;}
 ul{list-style-type: none;padding: 0;}
 
 /* || Typography */
@@ -36,15 +38,16 @@ h3,
 h4,
 h5 {
     font-family: var(--font-headers);
+    margin: 0;
 }
 
 h1 {
-    font-size: 3em;
+    font-size: 3.0em;
     font-weight: normal;
 }
 
 h2 {
-    font-size: 1.5em;
+    font-size: 2.0em;
 }
 
 /* || HR Styles */
@@ -108,6 +111,7 @@ h2 {
 
 #background {
     height: 100vh;
+    padding-top: 2rem;
 }
 
 /* || SKILLS */
@@ -156,13 +160,44 @@ h2 {
 
 /* || EDUCATION */
 .education {
-    padding: 0 10px;
+    padding: 0 10px 1rem;
 }
 
 .education-header { 
     text-align: center;
 }
 
+.education-list__items {
+    font-size: 1.5em;
+    margin-bottom: 1em;
+}
+.edu-list__title {
+    background-color: var(--feldgrau);
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+    display: block;
+    line-height: 2em;
+    padding-left: 10px;
+    width: 100%;
+}
+
+.education-list__item {
+    border-color: var(--light-green);
+    border-width: 0 1px 1px 1px;
+    border-style: solid;
+    font-size: 1rem;
+    min-height: 3rem;
+    padding: 5px;
+    text-align: left;
+}
+
+/* Rounds bottom corners of last certification for aesthetic reasons */
+.education-list__item:last-of-type {
+    border-radius: 0 0 5px 5px;
+}
+
+/* For toggling the certifications */
 .education-list__dropdown {
     display: none;
 }
@@ -171,7 +206,9 @@ h2 {
     display: block;
 }
 
-
+.edu-border__fix {
+    border-radius: 5px 5px 0 0;
+}
 
 /* || MEDIA QUERIES */
 @media (min-width: 780px) {
@@ -182,6 +219,16 @@ h2 {
     .skills-card {
         flex: 1 1 30%;
     }
+
+    .education-list {
+        display: flex;
+    }
+
+    .education-list__items {
+        flex: 1 1 30%;
+        margin: 1rem;
+    }
+
 }
 
 /* || ANIMATIONS */

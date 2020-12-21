@@ -27,7 +27,7 @@ body {
     margin: 0;
     color: var(--feldgrau);
 }
-a{color: var(--feldgrau); text-decoration: none;}
+a{color: black; text-decoration: none;}
 a:focus{outline:none;}
 ul{list-style-type: none;padding: 0;}
 
@@ -80,22 +80,9 @@ h2 {
     width: 100%;
     padding: 0 1em;
     display: grid;
-    background: hsla(149, 93%, 40%, 1);
-    background: linear-gradient(
-        135deg,
-        hsla(149, 93%, 40%, 1) 0%,
-        rgb(73, 200, 71)    );
-    background: -moz-linear-gradient(
-        135deg,
-        hsla(149, 93%, 40%, 1) 0%,
-        rgb(73, 200, 71) 100%
-    );
-    background: -webkit-linear-gradient(
-        135deg,
-        hsla(149, 93%, 40%, 1) 0%,
-        rgb(73, 200, 71) 100%
-    );
-    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#07C563", endColorstr="#2A5E29", GradientType=1 );
+    background: url('images/annie-spratt-z2u4tUrNvmY-unsplash.jpg');
+    background-position: bottom;
+    background-size: cover;
     color: white;
 }
 
@@ -110,8 +97,8 @@ h2 {
 }
 
 #background {
-    height: 100vh;
     padding-top: 2rem;
+    min-height: 100vh;
 }
 
 /* || SKILLS */
@@ -160,7 +147,9 @@ h2 {
 
 /* || EDUCATION */
 .education {
-    padding: 0 10px 1rem;
+    padding: 1rem;
+    background-color: var(--emerald);
+    min-height: 300px;
 }
 
 .education-header { 
@@ -168,7 +157,7 @@ h2 {
 }
 
 .education-list__items {
-    font-size: 1.5em;
+    font-size: 1.2em;
     margin-bottom: 1em;
 }
 .edu-list__title {
@@ -190,7 +179,13 @@ h2 {
     min-height: 3rem;
     padding: 5px;
     text-align: left;
+    color: white;
 }
+
+.education-list__item a {
+    color: white;
+}
+
 
 /* Rounds bottom corners of last certification for aesthetic reasons */
 .education-list__item:last-of-type {

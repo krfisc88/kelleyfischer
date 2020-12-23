@@ -19,7 +19,7 @@
 html {
     margin: 0;
     padding: 0;
-    font-size: 16px;
+    font-size: 12px;
 }
 
 body {
@@ -31,7 +31,7 @@ a {
     color: black;
     text-decoration: none;
 }
-a:focus {
+a:focus, button:focus {
     outline: none;
 }
 ul {
@@ -85,11 +85,33 @@ h3 {
     );
 }
 
-/* || NAVIGATION */
+/* ******************* || NAVIGATION ******************* */
+.main-nav__wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
 
-.side-navigation {}
+.main-nav {
+    flex: 1 0 auto;
+}
 
-#portfolio-image {
+.main-nav__brand {
+    text-align: center;
+}
+
+.main-nav__list {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.main-nav__item {
+    font-size: 2em;
+    margin-top: 2em;
+}
+
+.portfolio-image {
     clip-path: circle();
     height: 20vh;
 }
@@ -105,7 +127,15 @@ h3 {
     text-align: center;
 }
 
-/* || INTRO */
+.main-nav__item a:hover,
+.socials__item a:hover,
+.main-nav__item a:active,
+.socials__item a:active {
+    color: var(--emerald-2);
+}
+
+
+/* ******************* || INTRO ******************* */
 
 #intro {
     height: 100vh;
@@ -130,13 +160,14 @@ h3 {
     font-size: 2rem;
 }
 
-/* || BACKGROUND */
+/* ******************* || BACKGROUND ******************* */
 #background {
     padding-top: 2rem;
     text-align: center;
+    height: 100vh;
 }
 
-/* || SKILLS */
+/* ******************* || SKILLS ******************* */
 .skills-header {
     text-align: center;
     margin: 0 auto;
@@ -178,7 +209,7 @@ h3 {
     font-size: 0.8em;
 }
 
-/* || EDUCATION */
+/* ******************* || EDUCATION ******************* */
 .education {
     background-color: var(--emerald);
     padding: 1rem;
@@ -231,10 +262,45 @@ h3 {
     border-radius: 0 0 5px 5px;
 }
 
-/* || MEDIA QUERIES */
-@media (min-width: 780px) {
+/* ******************* || MEDIA QUERIES ******************* */
+/* Menu overlay for mobile devices */
+@media (max-width: 779px) {
+    #toggle {
+        position: fixed;
+        top: 2rem;
+        right: 2rem;
+        background-color: transparent;
+        border: none;
+        z-index: 1;
+    }
 
-    /* || LAYOUT (DESKTOP) */
+    .toggle-x {
+        color: white;
+    }
+    
+    .collapse {
+        display: none;
+    }
+
+    .main-nav__wrapper {
+        background-color: rgba(0, 0, 0, 0.9);
+        color: white;
+        position: fixed;
+        width: 100%;
+    }
+
+    .main-nav__wrapper a {
+        color: white;
+    }
+}
+
+/* Desktop Layout */
+@media (min-width: 780px) {
+    html {
+        font-size: 16px;
+    }
+
+    /* || LAYOUT */
     body {
         display: flex;
     }
@@ -244,18 +310,21 @@ h3 {
         overflow-y: scroll;
     }
 
-    /* || NAVIGATION (DESKTOP) */
+    /* || NAVIGATION */
+    #toggle {
+        display: none;
+    }
+
     .side-navigation {
         flex: 1 0 300px;
         height: 100vh;
     }
-    
+
     .intro__title {
         background-color: transparent;
     }
-    
-    
-    /* || BACKGROUND (DESKTOP) */
+
+    /* || BACKGROUND */
     .skills {
         min-height: 40vh;
     }

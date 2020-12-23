@@ -1,3 +1,5 @@
+
+// Window Dropdowns
 const eduList = document.querySelector('.education-list');
 const items = document.querySelectorAll('.education-list__items');
 
@@ -16,10 +18,27 @@ function toggleEducation() {
     }
 }
 
+
+
 // Event Listeners
 for (let item of items) {
-    if (item.querySelector(".education-list__dropdown")) {
-        item.addEventListener("click", toggleEducation, false);
-        item.addEventListener("keypress", toggleEducation, false);
+    if (item.querySelector('.education-list__dropdown')) {
+        item.addEventListener('click', toggleEducation, false);
+        item.addEventListener('keypress', toggleEducation, false);
     }
 }
+
+
+// Handle Overlay Menu for mobile devices
+const menu = document.getElementById('toggle');
+const navbar = document.getElementById('navbar');
+
+menu.addEventListener('click', () => {
+    if(navbar.classList.contains('collapse')) {
+        navbar.classList.remove('collapse');
+        menu.innerHTML = '<i class="fas fa-times fa-2x"></i>';
+    } else {
+        navbar.classList.add('collapse');
+        menu.innerHTML = '<i class="fas fa-bars fa-2x">';
+    }
+});

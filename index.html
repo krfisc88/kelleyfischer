@@ -15,30 +15,40 @@
 
 <body>
     <div class="side-navigation">
-        <nav class="main-nav">
-            <div class="main-nav__brand">
-                <img src="./images/portfolio_pic.png" alt="A man smiling" id="portfolio-image">
-            </div>
-        </nav>
-        <footer id="footer">
-            <ul class="socials__list">
-                <li class="socials__item">
-                    <a class="socials__link" href="https://www.linkedin.com/in/kelley-fischer-b48b31b0/"><i
-                            class="fab fa-linkedin fa-2x"></i></a>
-                </li>
-                <li class="socials__item">
-                    <a class="socials__link" href="https://github.com/krfisc88"><i class="fab fa-github fa-2x"></i></a>
-                </li>
-                <li class="socials__item"><a href="mailto:kfisc62@gmail.com" class="socials__link"><i
-                            class="far fa-envelope fa-2x"></i></a></li>
-            </ul>
-            <p>Copyright &copy; 2020 krf dev</p>
-            <p>Background <span>Photo by <a
-                        href="https://unsplash.com/@anniespratt?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Annie
-                        Spratt</a> on <a
-                        href="https://unsplash.com/license?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
-            </p>
-        </footer>
+        <button type="button" id="toggle" aria-label="Toggle navigation"><i class="fas fa-bars fa-2x"></i></button>
+        <div class="collapse main-nav__wrapper" id="navbar">
+            
+            <nav class="main-nav">
+                <div class="main-nav__brand">
+                    <img src="./images/portfolio_pic.png" alt="A man smiling" class="portfolio-image">
+                </div>
+                <ul class="main-nav__list">
+                    <li class="main-nav__item"><a href="#" class="main-nav__link">Projects</a></li>
+                    <li class="main-nav__item"><a href="#" class="main-nav__link">My Process</a></li>
+                    <li class="main-nav__item"><a href="#" class="main-nav__link">Skills</a></li>
+                    <li class="main-nav__item"><a href="#" class="main-nav__link">Secrets</a></li>
+                </ul>
+            </nav>
+            <footer id="footer">
+                <ul class="socials__list">
+                    <li class="socials__item">
+                        <a class="socials__link" href="https://www.linkedin.com/in/kelley-fischer-b48b31b0/"><i
+                                class="fab fa-linkedin fa-2x"></i></a>
+                    </li>
+                    <li class="socials__item">
+                        <a class="socials__link" href="https://github.com/krfisc88"><i class="fab fa-github fa-2x"></i></a>
+                    </li>
+                    <li class="socials__item"><a href="mailto:kfisc62@gmail.com" class="socials__link"><i
+                                class="far fa-envelope fa-2x"></i></a></li>
+                </ul>
+                <p>Copyright &copy; 2020 krf dev</p>
+                <p>Background <span>Photo by <a
+                            href="https://unsplash.com/@anniespratt?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Annie
+                            Spratt</a> on <a
+                            href="https://unsplash.com/license?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
+                </p>
+            </footer>
+        </div>
     </div>
     <main>
         <header id="intro">

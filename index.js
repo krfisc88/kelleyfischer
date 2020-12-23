@@ -9,10 +9,10 @@ function toggleEducation() {
         eduList.querySelector('.edu__dropdown-active').classList.remove('edu__dropdown-active');
         eduList.querySelector('.edu-border__fix').classList.remove('edu-border__fix');
         this.classList.add('edu__dropdown-active');
-        this.querySelector('a').classList.add('edu-border__fix')
+        this.querySelector('a').classList.add('edu-border__fix');
     } else {
         this.classList.add('edu__dropdown-active');
-        this.querySelector('a').classList.add('edu-border__fix')
+        this.querySelector('a').classList.add('edu-border__fix');
     }
 }
 

@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/762fabef2a.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link
         href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;700&family=Raleway:wght@400;500&display=swap"
@@ -13,23 +14,46 @@
 </head>
 
 <body>
-    <header id="nav">
-        <nav class="main-nav" role="navigation">
-            <!-- INSERT NAVIGATION HERE -->
+    <div class="side-navigation">
+        <nav class="main-nav">
+            <div class="main-nav__brand">
+                <img src="./images/portfolio_pic.png" alt="A man smiling" id="portfolio-image">
+            </div>
         </nav>
-    </header>
+        <footer id="footer">
+            <ul class="socials__list">
+                <li class="socials__item">
+                    <a class="socials__link" href="https://www.linkedin.com/in/kelley-fischer-b48b31b0/"><i
+                            class="fab fa-linkedin fa-2x"></i></a>
+                </li>
+                <li class="socials__item">
+                    <a class="socials__link" href="https://github.com/krfisc88"><i class="fab fa-github fa-2x"></i></a>
+                </li>
+                <li class="socials__item"><a href="mailto:kfisc62@gmail.com" class="socials__link"><i
+                            class="far fa-envelope fa-2x"></i></a></li>
+            </ul>
+            <p>Copyright &copy; 2020 krf dev</p>
+            <p>Background <span>Photo by <a
+                        href="https://unsplash.com/@anniespratt?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Annie
+                        Spratt</a> on <a
+                        href="https://unsplash.com/license?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
+            </p>
+        </footer>
+    </div>
     <main>
-        <header id="intro" role="banner">
+        <header id="intro">
             <div class="intro__title">
                 <h1>Kelley Fischer</h1>
                 <hr class="hr-primary">
                 <h2>All Natural, Free-range Front-End Web Developer</h2>
             </div>
         </header>
-        <article id="background" role="article">
+        <article id="background">
+            <h2>Code the Way Nature Intended</h2>
+            <hr class="hr-secondary">
             <section class="skills">
                 <header class="skills-header">
-                    <h2>Fresh From Desk to Server</h2>
+                    <h3>Fresh From Desk to Server</h3>
                 </header>
                 <div class="skills-wrapper">
                     <div class="skills-card">
@@ -39,7 +63,7 @@
                     <div class="skills-card">
                         <h3 class="skills-card__title">Pure, Organic <span>CSS</span></h3>
                         <p class="skills-card__text"><small>*No significant difference has been proven between organic
-                                CSS and CSS frameworks such as Bootstrap (which I use sometimes)</small></p>
+                                CSS and CSS frameworks such as Bootstrap (which I sometimes use)</small></p>
                     </div>
                     <div class="skills-card">
                         <h3 class="skills-card__title">Now with 60% MORE <span>JavaScript</span>!</h3>
@@ -50,14 +74,15 @@
             </section>
             <section class="education">
                 <header class="education-header">
-                    <h2>Reasons smart moms (and smarter employers) choose Kelley Fischer</h3>
+                    <h3>Reasons smart moms (and smarter employers) choose Kelley Fischer</h3>
                 </header>
                 <ul class="education-list">
                     <li class="education-list__items">
                         <a tabindex="0" class="edu-list__title">Udemy Certifications</a>
                         <ul class="education-list__dropdown">
                             <li class="education-list__item">
-                                <a href="https://www.udemy.com/certificate/UC-25386c99-e267-4435-bc8e-a4bb84eef238/" >Dr. Angela Yu’s Complete Web Devleoper 2020 Certification</a>
+                                <a href="https://www.udemy.com/certificate/UC-25386c99-e267-4435-bc8e-a4bb84eef238/">Dr.
+                                    Angela Yu’s Complete Web Devleoper 2020 Certification</a>
                             </li>
                             <li class="education-list__item">Academind’s CSS - The Complete Guide 2020 (incl. Flexbox,
                                 Grid & Sass) Certification</li>
@@ -74,17 +99,15 @@
                     <li class="education-list__items">
                         <a tabindex="0" class="edu-list__title">CSS-Tricks Fanboy</a>
                         <ul class="education-list__dropdown">
-                            <li class="education-list__item">No certifications or anything, I just love this site. A lot.</li>
+                            <li class="education-list__item">No certifications or anything, I just love <a
+                                    href="https://css-tricks.com/">this site</a>. A lot.</li>
                         </ul>
                     </li>
                 </ul>
             </section>
         </article>
     </main>
-    <footer id="footer">
-        <p>Copyright &copy; 2020 KRF Web Development</p>
-        <p>Background <span>Photo by <a href="https://unsplash.com/@anniespratt?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Annie Spratt</a> on <a href="https://unsplash.com/license?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span></p>
-    </footer>
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="index.js"></script>
 </body>

@@ -37,8 +37,10 @@ menu.addEventListener('click', () => {
     if(navbar.classList.contains('collapse')) {
         navbar.classList.remove('collapse');
         menu.innerHTML = '<i class="fas fa-times fa-2x"></i>';
+        menu.classList.add('toggle-x');
     } else {
         navbar.classList.add('collapse');
         menu.innerHTML = '<i class="fas fa-bars fa-2x">';
+        menu.classList.remove('toggle-x');
     }
 });

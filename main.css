@@ -1,147 +1,10 @@
-:root {
-    --feldgrau: #627264ff;
-    --light-green: #8ae788ff;
-    --emerald: #28ce6dff;
-    --emerald-2: #07c563ff;
-    --dark-orange: #ff8811ff;
-    --chocolate-web: #e07000ff;
-
-    --font-main: "Raleway", sans-serif;
-    --font-headers: "EB Garamond", serif;
-}
-
-*,
-*::before,
-*::after {
-    box-sizing: border-box;
-}
-
-html {
-    margin: 0;
-    padding: 0;
-    font-size: 12px;
-}
-
-body {
-    font-family: var(--font-main);
-    margin: 0;
-    color: var(--feldgrau);
-}
-a {
-    color: black;
-    text-decoration: none;
-}
-a:focus, button:focus {
-    outline: none;
-}
-ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-/* || Typography */
-h1,
-h2,
-h3,
-h4,
-h5 {
-    font-family: var(--font-headers);
-    margin: 0;
-}
-
-h1 {
-    font-size: 3.5rem;
-    font-weight: normal;
-}
-
-h2 {
-    font-size: 3rem;
-}
-
-h3 {
-    font-size: 2.5rem;
-}
-
-/* || HR Styles */
-.hr-primary {
-    border: 0;
-    height: 1px;
-    background-image: linear-gradient(
-        to right,
-        rgba(255, 255, 255, 0),
-        rgba(255, 255, 255, 0.75),
-        rgba(255, 255, 255, 0)
-    );
-}
-
-.hr-secondary {
-    border: 0;
-    height: 1px;
-    background-image: linear-gradient(
-        to right,
-        rgba(0, 0, 0, 0),
-        rgba(0, 0, 0, 0.75),
-        rgba(0, 0, 0, 0)
-    );
-}
-
-/* ******************* || NAVIGATION ******************* */
-.main-nav__wrapper {
-    display: flex;
-    flex-direction: column;
-    height: 100vh;
-}
-
-.main-nav {
-    flex: 1 0 auto;
-}
-
-.main-nav__brand {
-    text-align: center;
-}
-
-.main-nav__list {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-}
-
-.main-nav__item {
-    font-size: 2em;
-    margin-top: 2em;
-}
-
-.portfolio-image {
-    clip-path: circle();
-    height: 20vh;
-}
-
-.socials__list {
-    display: flex;
-    justify-content: center;
-}
-
-.socials__item {
-    flex-basis: 30%;
-    flex-grow: 1;
-    text-align: center;
-}
-
-.main-nav__item a:hover,
-.socials__item a:hover,
-.main-nav__item a:active,
-.socials__item a:active {
-    color: var(--emerald-2);
-}
-
-
 /* ******************* || INTRO ******************* */
 
 #intro {
     height: 100vh;
     width: 100%;
     display: grid;
-    background: url("images/annie-spratt-z2u4tUrNvmY-unsplash.jpg");
+    background: url("_shared/images/annie-spratt-z2u4tUrNvmY-unsplash.jpg");
     background-position: bottom;
     background-size: cover;
     color: white;
@@ -262,63 +125,8 @@ h3 {
     border-radius: 0 0 5px 5px;
 }
 
-/* ******************* || MEDIA QUERIES ******************* */
-/* Menu overlay for mobile devices */
-@media (max-width: 779px) {
-    #toggle {
-        position: fixed;
-        top: 2rem;
-        right: 2rem;
-        background-color: transparent;
-        border: none;
-        z-index: 1;
-    }
-
-    .toggle-x {
-        color: white;
-    }
-    
-    .collapse {
-        display: none;
-    }
-
-    .main-nav__wrapper {
-        background-color: rgba(0, 0, 0, 0.9);
-        color: white;
-        position: fixed;
-        width: 100%;
-    }
-
-    .main-nav__wrapper a {
-        color: white;
-    }
-}
-
 /* Desktop Layout */
 @media (min-width: 780px) {
-    html {
-        font-size: 16px;
-    }
-
-    /* || LAYOUT */
-    body {
-        display: flex;
-    }
-
-    main {
-        height: 100vh;
-        overflow-y: scroll;
-    }
-
-    /* || NAVIGATION */
-    #toggle {
-        display: none;
-    }
-
-    .side-navigation {
-        flex: 1 0 300px;
-        height: 100vh;
-    }
 
     .intro__title {
         background-color: transparent;
@@ -345,7 +153,8 @@ h3 {
     .education-list {
         display: flex;
         min-height: 20vh;
-        margin-top: 3rem;
+        margin-top: 2rem;
+        margin-bottom: 3rem;
     }
 
     /* For toggling the Education certifications */

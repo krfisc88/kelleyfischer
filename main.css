@@ -4,7 +4,7 @@
     height: 100vh;
     width: 100%;
     display: grid;
-    background: url("_shared/images/annie-spratt-z2u4tUrNvmY-unsplash.jpg");
+    background: url("shared/images/annie-spratt-z2u4tUrNvmY-unsplash.jpg");
     background-position: bottom;
     background-size: cover;
     color: white;

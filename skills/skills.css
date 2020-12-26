@@ -1,0 +1,80 @@
+#skills {
+    text-align: center;
+    /* background-color: var(--feldgrau); */
+    /* color: white; */
+    padding: 1.5rem 2.5rem 0;
+    /* display: block; */
+    /* height: 100%; */
+}
+
+.brand-fonts {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.skills-item__logos {
+    width: 130px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 0.5em;
+    column-gap: 1.0em;
+    justify-items: center;
+}
+
+.skills-item__logos span {
+    grid-column: span 2;
+}
+
+.skills-item__logo {
+    font-size: 3rem;
+}
+
+.skills-item__logo-img {
+    height: 50px;
+}
+
+.fa-html5 {
+    color: #f06529;
+}
+
+.fa-css3-alt {
+    color: #2965f1;
+}
+
+.fa-js-square {
+    color: #f0db4f;
+}
+
+/* .fa-bootstrap {
+    color: #602C50;
+} */
+
+.fa-react {
+    color: #61DBFB;
+}
+
+.fa-git-alt {
+    color: #f34f29;
+}
+
+.skill-header {
+    font-size: 1.5em;
+}
+
+.skill-description {
+    font-size: 1em;
+}
+
+@media (min-width: 780px) {
+
+    #skills {
+        height: 100%;
+    }
+
+    .skills-container {
+        display: grid;
+        margin-top: 3rem;
+        grid-template-columns: 1fr 1fr 1fr;
+        column-gap: 1em;
+    }
+}

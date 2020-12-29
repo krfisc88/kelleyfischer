@@ -4,17 +4,28 @@
     height: 100vh;
     width: 100%;
     display: grid;
+    color: white;
+    position: relative;
+}
+
+.parallax {
     background: url("shared/images/annie-spratt-z2u4tUrNvmY-unsplash.jpg");
     background-position: bottom;
+    background-attachment: fixed;
     background-size: cover;
-    color: white;
+    min-height: 100vh;
+    z-index: -2;
 }
 
 .intro__title {
-    margin: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     text-align: center;
     background-color: rgba(0, 0, 0, 0.2);
     padding: 2em 0.5em;
+    z-index: -1;
 }
 
 .intro__title h2 {
@@ -23,14 +34,13 @@
     font-size: 2rem;
 }
 
-/* ******************* || BACKGROUND ******************* */
-#background {
-    padding-top: 2rem;
-    text-align: center;
-    height: 100vh;
-}
 
 /* ******************* || SKILLS ******************* */
+#skills {
+    text-align: center;
+    padding: 1.5rem 0.5rem;
+}
+
 .skills-header {
     text-align: center;
     margin: 0 auto;
@@ -39,14 +49,14 @@
 }
 
 .skills-wrapper {
-    width: 90%;
-    margin: 0 auto;
+    margin: 1.5rem;
 }
 
 .skills-card {
     border-radius: 25px 25px 25px 0;
     border: 1px solid var(--emerald);
     margin: 1em;
+    min-height: 20vh;
     padding: 0.2em 1em;
     text-align: center;
 }
@@ -73,16 +83,16 @@
 }
 
 /* ******************* || EDUCATION ******************* */
-.education {
+#education {
     background-color: var(--emerald);
     padding: 1rem;
     padding-top: 2em;
 }
 
 .education-header {
-    text-align: center;
-    margin-bottom: 3em;
     color: white;
+    margin-bottom: 3em;
+    text-align: center;
 }
 
 .education-list__items {
@@ -102,10 +112,12 @@
     color: white;
     display: block;
     line-height: 2em;
+    text-align: center;
     width: 100%;
 }
 
 .education-list__item {
+    background-color: white;
     border-color: var(--light-green);
     border-width: 0 1px 1px 1px;
     border-style: solid;
@@ -113,11 +125,12 @@
     min-height: 3rem;
     padding: 5px;
     text-align: left;
-    color: white;
+    
 }
 
-.education-list__item a {
-    color: white;
+.education-list__item a:hover,
+.education-list__item a:active {
+    color: var(--emerald);
 }
 
 /* Rounds bottom corners of last certification for aesthetic reasons */
@@ -126,29 +139,41 @@
 }
 
 /* Desktop Layout */
-@media (min-width: 780px) {
+@media (min-width: 1150px) {
 
     .intro__title {
         background-color: transparent;
     }
+    
+    /* ******************* || BACKGROUND ******************* */
 
-    /* || BACKGROUND */
-    .skills {
-        min-height: 40vh;
+    /* SKILLS */
+    #skills {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 10vh 5vw;
+    }
+
+    .skills-header {
+        flex: 1 0 auto;
     }
 
     .skills-wrapper {
         display: flex;
-        min-height: 25vh;
+        flex: 2 0 auto;
     }
 
     .skills-card {
-        flex: 1 1 30%;
+        flex: 1 1 20%;     
+        display: flex;   
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
     }
 
-    .education {
-        min-height: 40vh;
-    }
+    /* EDUCATION */
 
     .education-list {
         display: flex;

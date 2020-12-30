@@ -54,7 +54,7 @@
 
 .skills-card {
     border-radius: 25px 25px 25px 0;
-    border: 1px solid var(--emerald);
+    border: 1px solid var(--color-primary);
     margin: 1em;
     min-height: 20vh;
     padding: 0.2em 1em;
@@ -62,7 +62,7 @@
 }
 
 .skills-card:nth-of-type(2) {
-    border: 1px solid var(--dark-orange);
+    border: 1px solid var(--color-secondary);
 }
 
 .skills-card__title {
@@ -84,7 +84,7 @@
 
 /* ******************* || EDUCATION ******************* */
 #education {
-    background-color: var(--emerald);
+    background-color: var(--color-primary);
     padding: 1rem;
     padding-top: 2em;
 }
@@ -102,12 +102,12 @@
 
 .education-list__item a:hover,
 .education-list__item a:active {
-    color: var(--feldgrau);
+    color: var(--color-fonts-primary);
     font-weight: bold;
 }
 
 .edu-list__title {
-    background-color: var(--feldgrau);
+    background-color: var(--color-fonts-primary);
     border-radius: 5px 5px 0 0;
     color: white;
     display: block;
@@ -118,7 +118,7 @@
 
 .education-list__item {
     background-color: white;
-    border-color: var(--light-green);
+    border-color: var(--color-primary-accent);
     border-width: 0 1px 1px 1px;
     border-style: solid;
     font-size: 1rem;
@@ -130,7 +130,7 @@
 
 .education-list__item a:hover,
 .education-list__item a:active {
-    color: var(--emerald);
+    color: var(--color-primary);
 }
 
 /* Rounds bottom corners of last certification for aesthetic reasons */
@@ -201,8 +201,8 @@
     }
     .edu-list__title:hover,
     .edu-list__title:active {
-        color: var(--feldgrau);
-        background-color: var(--light-green);
+        color: var(--color-fonts-primary);
+        background-color: var(--color-primary-accent);
     }
 
     .education-list__items {
@@ -214,10 +214,10 @@
 /* || ANIMATIONS */
 @keyframes colorChange {
     0% {
-        color: var(--light-green);
+        color: var(--color-primary-accent);
     }
 
     100% {
-        color: var(--emerald-2);
+        color: var(--color-primary);
     }
 }

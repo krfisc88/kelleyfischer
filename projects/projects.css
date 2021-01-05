@@ -1,6 +1,11 @@
 h1 {
     text-align: center;
-    padding: 1em 0.2em;
+    padding: 1.5em 0.2em 0.5em;
+    font-size: 2.5em;
+}
+
+.hr-secondary {
+    margin-bottom: 3em;
 }
 
 /* || PROJECT STYLES */
@@ -9,6 +14,11 @@ h1 {
     text-align: center;
     display: flex;
     flex-direction: column;
+}
+
+.project-title {
+    font-size: 2em;
+    padding-top: 1em;
 }
 
 .project-container {

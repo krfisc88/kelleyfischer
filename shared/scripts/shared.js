@@ -17,3 +17,14 @@ function mobileMenu() {
 menu.addEventListener('click', () => {
     mobileMenu();
 });
+
+// Update Copyright Year
+
+function updateYear() {
+    const currentTime = new Date();
+    const year = currentTime.getFullYear();
+    const yearElement = document.getElementById('copyright-year');
+    yearElement.innerHTML = year;
+}
+
+updateYear();

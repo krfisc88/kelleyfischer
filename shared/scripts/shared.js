@@ -18,8 +18,8 @@ menu.addEventListener('click', () => {
     mobileMenu();
 });
 
-// Update Copyright Year
 
+// Update Copyright Year
 function updateYear() {
     const currentTime = new Date();
     const year = currentTime.getFullYear();

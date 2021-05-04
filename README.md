@@ -22,11 +22,3 @@ This is for explaining my design process. I really need to start using a design 
 
 I'll put badges for the frameworks/languages/etc. that I know how to use, not sure how to display them yet. Maybe a collage? Or an animation like a trophy case or something...
 
-
-### ISSUES
-
-HOME
-* The background section needs to a responsive font size at widths of >=1020px.
-  * The education list buttons wrap and it looks weird
-  * The skill boxes overflow to the right
-  * 

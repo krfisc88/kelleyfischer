@@ -5,3 +5,7 @@ deployment:
     - /bin/cp index.html $DEPLOYPATH
     - /bin/cp index.js $DEPLOYPATH
     - /bin/cp main.css $DEPLOYPATH
+    - /bin/cp -R skills $DEPLOYPATH
+    - /bin/cp -R projects $DEPLOYPATH
+    - /bin/cp -R shared $DEPLOYPATH
+    - /bin/cp -R process $DEPLOYPATH
